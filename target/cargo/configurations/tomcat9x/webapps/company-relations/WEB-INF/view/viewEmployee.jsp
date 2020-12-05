@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page import="academy.learnprogramming.util.AttributeNames" %>
 <%@ page import="academy.learnprogramming.util.Mappings" %>
-<style><%@include file="/WEB-INF/styles/style.css"%></style>
+<style><%@include file="/WEB-INF/styles/view-style.css"%></style>
 <html>
 <head>
     <title>Relaty
@@ -10,10 +10,10 @@
 </head>
 <body>
     <nav class="navigation">
-              <div class="logo">
-                <h4>Relaty</h4>
-              </div>
-              <ul class="nav-links">
+          <div class="logo">
+            <h4>Relaty</h4>
+          </div>
+          <ul class="nav-links">
               <li>
                   <c:url var="homeUrl" value="${Mappings.HOME}"/>
                   <a href="${homeUrl}">Home</a>
@@ -22,28 +22,38 @@
                   <c:url var="backUrl" value="${Mappings.EMPLOYEES}"/>
                   <a href="${backUrl}">Back To Employees List</a>
               </li>
-              </ul>
-        </nav>
+          </ul>
+    </nav>
+
     <div align="center">
         <table>
+            <caption></caption>
             <tr>
-                <td class="label"><label>Name:</label></td><br>
-                <td><c:out value="${employeeItem.name}"/></td>
+                <th class="details">Employee Details</th>
+            </tr>
+            <tr>
+                <td class="cell label"><label>Name:</label></td><br>
+                <td class="cell"><c:out value="${employeeItem.name}"/></td>
             </tr>
 
             <tr>
-                <td class="label"><label>Surname:</label></td><br>
-                <td><c:out value="${employeeItem.surname}"/></td>
+                <td class="cell label"><label>Surname:</label></td><br>
+                <td class="cell"><c:out value="${employeeItem.surname}"/></td>
             </tr>
 
             <tr>
-                <td class="label"><label>Job Title:</label></td><br>
-                <td><c:out value="${employeeItem.jobTitle}"/></td>
+                <td class="cell label"><label>Age:</label></td><br>
+                <td class="cell"><c:out value="${employeeItem.age}"/></td>
             </tr>
 
             <tr>
-                <td class="label"><label>Email:</label></td><br><br>
-                <td><c:out value="${employeeItem.email}"/></td>
+                <td class="cell label"><label>Job Title:</label></td><br>
+                <td class="cell"><c:out value="${employeeItem.jobTitle}"/></td>
+            </tr>
+
+            <tr>
+                <td class="cell label"><label>Email:</label></td><br><br>
+                <td class="cell"><c:out value="${employeeItem.email}"/></td>
             </tr>
 
         </table>

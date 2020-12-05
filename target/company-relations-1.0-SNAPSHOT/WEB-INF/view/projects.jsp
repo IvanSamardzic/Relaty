@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page import="academy.learnprogramming.util.Mappings" %>
-<style><%@include file="/WEB-INF/styles/style.css"%></style>
+<style><%@include file="/WEB-INF/styles/list-style.css"%></style>
 <html>
 <head>
     <title>Relaty</title>

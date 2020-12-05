@@ -69,10 +69,14 @@ nav.navigation {
 }
 
 .nav-links li {
+    display: flex;
+    justify-content: center;
     list-style: none;
+    text-aling: center;
 }
 
 .nav-links a {
+    text-aling: center;
     text-transform: uppercase;
     color: rgba(126, 154, 206, 1);
     text-decoration: none;
@@ -83,6 +87,12 @@ nav.navigation {
 .nav-links a:hover {
     color: white;
     transition: 0.5s ease;
+}
+
+.href-links{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .input-line:focus {
@@ -199,7 +209,7 @@ input{
     position: absolute;
     z-index: 120;
     transform: translateX(-50%);
-    top: 160px;
+    top: 140px;
     color: black;
     font-family: roboto;
     display: -webkit-box;
@@ -211,7 +221,7 @@ input{
     flex-flow: column;
     box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    height: 480px;
+    height: 340px;
     width: 360px;
     background: #dcc5fb;
     background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') top left no-repeat;

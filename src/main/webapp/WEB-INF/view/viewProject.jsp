@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page import="academy.learnprogramming.util.AttributeNames" %>
 <%@ page import="academy.learnprogramming.util.Mappings" %>
-<style><%@include file="/WEB-INF/styles/style.css"%></style>
+<style><%@include file="/WEB-INF/styles/view-style.css"%></style>
 <html>
 <head>
     <title>Relaty
@@ -27,13 +27,16 @@
     <div align="center">
         <table>
             <tr>
-                <td class="label"><label>Name:</label></td><br>
-                <td><c:out value="${projectItem.name}"/></td>
+                <th class="details">Project Details</th>
+            </tr>
+            <tr>
+                <td class="cell label"><label>Project Name:</label></td><br>
+                <td class="cell"><c:out value="${projectItem.name}"/></td>
             </tr>
 
             <tr>
-                <td class="label"><label>Employee:</label></td><br>
-                <td><c:out value="${projectItem.employee}"/></td>
+                <td class="cell label"><label>Project Manager:</label></td><br>
+                <td class="cell"><c:out value="${projectItem.employee}"/></td>
             </tr>
 
         </table>

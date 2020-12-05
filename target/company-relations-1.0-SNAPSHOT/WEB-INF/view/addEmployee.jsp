@@ -2,7 +2,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page import="academy.learnprogramming.util.AttributeNames" %>
 <%@ page import="academy.learnprogramming.util.Mappings" %>
-<style><%@include file="/WEB-INF/styles/login-style.css"%></style>
+<style><%@include file="/WEB-INF/styles/add-style.css"%></style>
 <html>
 <head>
     <title>Relaty
@@ -20,7 +20,7 @@
               </li>
               <li>
                 <c:url var="backUrl" value="${Mappings.EMPLOYEES}"/>
-                <a href="${backUrl}">Back To Employees List</a>
+                <a href="${backUrl}">Back To List</a>
               </li>
               </ul>
         </nav>
@@ -39,6 +39,8 @@
                             <form:input class="input-line" type="text" path="name" id="fname" value=""/><br><br>
                             <label for="fname">Surname:</label><br>
                             <form:input class="input-line" type="text" path="surname" id="fname" value=""/><br><br>
+                            <label for="fname">Age:</label><br>
+                            <form:input class="input-line" type="text" path="age" id="fname" value=""/><br><br>
                             <label for="fname">Job Position:</label><br>
                             <form:input class="input-line" type="text" path="jobTitle" id="fname" value=""/><br><br>
                             <label for="lname">Email Address:</label><br>

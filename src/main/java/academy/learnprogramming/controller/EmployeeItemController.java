@@ -52,7 +52,7 @@ public class EmployeeItemController {
         log.info("editing id = {}", id);
         EmployeeItem employeeItem = employeeItemService.getEmployee(id);
         if(employeeItem == null){
-            employeeItem = new EmployeeItem("", "", "", "", "");
+            employeeItem = new EmployeeItem("", "", 0,"", "", "");
         }
         model.addAttribute(AttributeNames.EMPLOYEE_ITEM, employeeItem);
         return ViewNames.ADD_EMPLOYEE;
@@ -69,6 +69,16 @@ public class EmployeeItemController {
         return "redirect:/" + Mappings.EMPLOYEES;
     }
 
+    @PostMapping()
+    public String loginEmployee(@ModelAttribute(AttributeNames.LOGIN_ITEM) EmployeeItem employeeItem){
+        log.info("employeeItem with id={} wants to log into server", employeeItem);
+        if(employeeItem.getId() != 0){
+            return "redirect:/" + Mappings.EMPLOYEES;
+        }
+        else{
+            return "redirect:/" + Mappings.HOME;
+        }
+    }
     @GetMapping(Mappings.DELETE_EMPLOYEE)
     public String deleteEmployee(@RequestParam int id){
         log.info("Deleting id ={}", id);

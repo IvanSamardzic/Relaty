@@ -14,9 +14,9 @@ public class EmployeeData {
 
     // == constructors
     public EmployeeData(){
-        addEmployee(new EmployeeItem("Neno", "Zidic", "Frontend Developer", "nzidic00@gmail.com",
+        addEmployee(new EmployeeItem("Neno", "Zidic", 23, "Frontend Developer", "nzidic00@gmail.com",
                 "abc123"));
-        addEmployee(new EmployeeItem("Igor", "Ujevic", "Frontend Developer", "iujevic00@gmail.com",
+        addEmployee(new EmployeeItem("Igor", "Ujevic", 23, "Frontend Developer", "iujevic00@gmail.com",
                 "abc123"));
     }
 
