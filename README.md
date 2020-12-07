@@ -10,8 +10,6 @@ Relaty is MVC Project made to track company employees, their positions and proje
  create new items, delete it or just read it.
 * Spring MVC Dependency injection is included to allow us to create MVC project, initialised in WebConfig.class
 
-
-
 #### Pushing existing locally stored folder in the GitHub folder using Git Bash
 ```
 echo "# Relaty" >> README.md
@@ -28,3 +26,29 @@ git remote add origin https://github.com/IvanSamardzic/Relaty.git
 git branch -M main
 git push -u origin main
 ```
+
+## MVC Architecture
+
+![MVC architecture image](https://www.w3schools.in/wp-content/uploads/2019/03/MVC-Architecture.png)
+
+
+The reason for the creation of this project is to get to know and increase the experience and knowledge with Spring MVC Framework which is today in great demand 
+in web development. MVC Project Structure is based on three parts:
+
+### Model
+* The central component of the pattern
+* The application's dynamic data structure, independent of the user interface
+* Directly manages the data, logic and rules of the application
+* Responsible for managing the data of the application
+* Receives user input from the controller
+
+### View
+* Any representation of information such as a chart, diagram or table
+* Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants
+* The view means presentation of the model in a particular format
+
+### Controler
+* Accepts input and converts it to commands for the model or view
+* Responds to the user input and performs interactions on the data model objects
+* Receives the input, optionally validates it and then passes the input to the model
+
